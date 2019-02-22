@@ -7,20 +7,23 @@ body {
     margin: 0px;
     padding: 0px;
     height: 100vh;
+    overflow: hidden;
     .content { 
+        margin-top: 10vh;
+
         img {
             top: 10%;
-            position: absolute;
+            position: relative;
             box-shadow: 17px 17px 59px -10px rgba(0,0,0,0.75);
 
         }
 
         #container{
             height: 200px;
-            position: relative;
+            position: absolute;
             overflow: hidden;
             top: 10vh;
-            margin-top: 10px;
+            padding-top: 10px;
 
         }
 
