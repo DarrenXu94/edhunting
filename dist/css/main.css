@@ -3,85 +3,11 @@ body {
   margin: 0px;
   padding: 0px;
   height: 100vh; }
-  body .content {
-    width: 500px;
-    height: 300px;
-    box-sizing: border-box;
-    padding: 3em 3em;
+  body .content img {
     position: absolute;
-    top: 30%;
-    left: 30%;
-    transform: translate(-50%, -50%); }
-    body .content::before, body .content::after {
-      content: '';
-      width: 0;
-      height: 0;
-      box-sizing: inherit;
-      margin-top: 30px;
-      margin-bottom: -30px;
-      border: 3px solid transparent;
-      position: absolute; }
-    body .content::before {
-      top: 10vh;
-      left: 25vw;
-      z-index: 100; }
-    body .content::after {
-      bottom: -10vh;
-      right: -20vw;
-      z-index: 999; }
-    body .content:hover::before, body .content:hover::after {
-      width: 100%;
-      height: 100%; }
-    body .content:hover::before {
-      border-top-color: #F25978;
-      border-right-color: #F25978;
-      transition: width 0.25s ease-out, height 0.25s ease-out 0.25s; }
-    body .content:hover::after {
-      border-bottom-color: #F7ACA9;
-      border-left-color: #F7ACA9;
-      transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s; }
-    body .content img {
-      position: absolute;
-      left: 25%;
-      width: 600px;
-      box-shadow: 17px 17px 59px -10px rgba(0, 0, 0, 0.75); }
-    body .content #container {
-      width: 120%;
-      height: 200px;
-      margin-top: 50px;
-      position: relative;
-      overflow: hidden;
-      margin-left: 20vw;
-      top: 10vh; }
-    body .content #title {
-      font-family: Brushed Traveler;
-      font-size: 35px;
-      color: #eee;
-      margin-bottom: 50px;
-      position: relative;
-      top: 10%;
-      left: -58%;
-      transition: all 1s;
-      z-index: 9; }
-    body .content #sub-title {
-      font-family: sans-serif;
-      font-size: 10px;
-      margin-left: 90px; }
-    body .content #btn {
-      height: 35px;
-      width: 100px;
-      border: 1px solid white;
-      font-family: sans-serif;
-      font-size: 11px;
-      color: white;
-      text-align: center;
-      line-height: 35px;
-      border-radius: 35px;
-      position: relative;
-      top: 0%;
-      left: -30%;
-      transition: all 1s; }
-    body .content:hover #container #title {
-      left: 37%; }
-    body .content:hover #container #btn {
-      left: 50%; }
+    left: 25%;
+    top: 10%;
+    width: 60vw;
+    min-width: 400px;
+    max-width: 800px;
+    box-shadow: 17px 17px 59px -10px rgba(0, 0, 0, 0.75); }
