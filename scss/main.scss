@@ -19,8 +19,6 @@ body {
         }
 
         #container{
-            height: 200px;
-            position: absolute;
             overflow: hidden;
             top: 10vh;
             padding-top: 10px;
@@ -59,23 +57,24 @@ body {
 
         #container{
             margin-left: 20vw;
+            height: 200px;
         }
 
         #title {
-            font-size: 20px;
+            font-size: 40px;
             margin-left: 10px;
 
         }
 
         #sub-title {
-            font-size: 10px;
+            font-size: 20px;
         }
 
         #btn {
-            height: 15px;
-            line-height: 15px;
-            font-size: 8px;
-            width: 70px;
+            height: 35px;
+            line-height: 35px;
+            font-size: 12px;
+            width: 100px;
             margin-left: 10px;
 
         }
@@ -91,8 +90,52 @@ body {
             width: 600px;
         }
 
-        #container{
-            margin-left: 30vw;
+        #container {
+            position: absolute;
+            left: 35vw;
+            top: 40vh !important;
+            width: 250px;
+            height: 104px;
+            overflow: visible !important;
+            &::before,&::after{
+                content: '';
+                width: 0;
+                height: 0;
+                box-sizing: inherit;
+                margin-top: 30px;
+                margin-bottom: -30px;
+                border:3px solid transparent;
+                position: absolute;
+
+            }
+    
+            &::before{
+                top:-5vh;
+                left: -1vw;
+                z-index: 100;
+            }
+            &::after{
+                bottom: 3vh;
+                left: -1vw;
+                z-index: 999;
+            }
+    
+            &:hover::before,
+            &:hover::after{
+                width: 100%;
+                height: 100%;
+            }
+    
+            &:hover::before{
+                border-top-color: #F25978;
+                border-right-color: #F25978;
+                transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+            }
+            &:hover::after{
+                border-bottom-color: #F7ACA9;
+                border-left-color: #F7ACA9;
+                transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
+            }
         }
 
         #title {
@@ -108,5 +151,8 @@ body {
             font-size: 11px;
             width: 100px;
         }
+
+        
+
      }
 }
