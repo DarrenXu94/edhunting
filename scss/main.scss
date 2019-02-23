@@ -128,6 +128,9 @@ section .wave:before {
 
 // For Mobile
 @media screen and (max-width: 960px) {
+    .hide-on-small {
+        display: none;
+    }
     .content { 
         img {
             left: 20%;

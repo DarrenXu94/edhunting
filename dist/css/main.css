@@ -88,6 +88,8 @@ section .wave:before {
     background-position: 0; } }
 
 @media screen and (max-width: 960px) {
+  .hide-on-small {
+    display: none; }
   .content img {
     left: 20%;
     width: 60vw; }
