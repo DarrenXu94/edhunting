@@ -33,14 +33,20 @@ body {
     body .content button:focus {
       outline: 0; }
     body .content .icons {
-      display: none; }
+      visibility: hidden;
+      opacity: 0;
+      transform: translateY(-2em);
+      transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s; }
       body .content .icons a {
         text-decoration: none !important;
         color: white; }
       body .content .icons a:hover {
         color: rgba(242, 89, 120, 0.75); }
     body .content .show {
-      display: block !important; }
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0%);
+      transition-delay: 0s, 0s, 0.3s; }
 
 @media screen and (max-width: 960px) {
   .content img {

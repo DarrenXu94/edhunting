@@ -47,9 +47,11 @@ body {
         }
         button:focus {outline:0;}
 
-
         .icons {
-            display: none;
+            visibility: hidden;
+            opacity: 0;
+            transform: translateY(-2em);
+            transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
 
             a {
                 text-decoration: none !important;
@@ -59,9 +61,16 @@ body {
             a:hover {
                 color: rgba(242,89,120, 0.75);
             }
+
+
         }
 
-        .show {display:block !important;}
+        .show {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0%);
+            transition-delay: 0s, 0s, 0.3s;
+        }
 
     }
 }
