@@ -29,9 +29,13 @@ body {
       text-align: center;
       border-radius: 35px;
       position: relative; }
-    body .content .icons a {
-      text-decoration: none !important;
-      color: white !important; }
+    body .content .icons {
+      display: none; }
+      body .content .icons a {
+        text-decoration: none !important;
+        color: white !important; }
+    body .content .show {
+      display: block !important; }
 
 @media screen and (max-width: 960px) {
   .content img {
