@@ -15,16 +15,16 @@ body {
       top: 10vh;
       padding-top: 10px; }
     body .content #title {
-      font-family: Brushed Traveler;
+      font-family: 'Shrikhand', cursive;
       color: #eee;
       position: relative;
       z-index: 9; }
     body .content #sub-title {
-      font-family: sans-serif;
+      font-family: 'Shrikhand', cursive;
       margin-left: 10px; }
     body .content #btn {
       border: 1px solid white;
-      font-family: sans-serif;
+      font-family: 'Shrikhand', cursive;
       color: white;
       text-align: center;
       border-radius: 35px;
@@ -74,7 +74,7 @@ body {
     left: 35vw;
     top: 40vh !important;
     width: 250px;
-    height: 104px;
+    padding-bottom: 10px;
     overflow: visible !important; }
     .content #container::before, .content #container::after {
       content: '';
@@ -112,4 +112,9 @@ body {
     height: 35px;
     line-height: 35px;
     font-size: 11px;
-    width: 100px; } }
+    width: 100px;
+    z-index: 1000;
+    margin-bottom: 10px; }
+    .content #btn:hover {
+      background-color: rgba(242, 89, 120, 0.75);
+      cursor: pointer; } }
