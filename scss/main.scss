@@ -44,6 +44,14 @@ body {
             border-radius: 35px;
             position: relative;
         }
+
+        .icons {
+            a {
+                text-decoration: none !important;
+                color:white !important;
+
+            }
+        }
     }
 }
 
@@ -74,9 +82,18 @@ body {
             height: 35px;
             line-height: 35px;
             font-size: 12px;
-            width: 100px;
+            width: 60vw;
             margin-left: 10px;
 
+        }
+
+        .icons {
+            margin-top: 10px;
+            color:white;
+            word-spacing: 0.5rem;
+            font-size: 20px;
+            width: 60vw;
+            text-align: center;
         }
 
      }
@@ -88,6 +105,11 @@ body {
         img {
             left: 25%;
             width: 600px;
+        }
+
+        .icons {
+            color:white;
+            
         }
 
         #container {
