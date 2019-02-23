@@ -28,12 +28,17 @@ body {
       color: white;
       text-align: center;
       border-radius: 35px;
-      position: relative; }
+      position: relative;
+      background-color: rgba(242, 89, 120, 0.15); }
+    body .content button:focus {
+      outline: 0; }
     body .content .icons {
       display: none; }
       body .content .icons a {
         text-decoration: none !important;
-        color: white !important; }
+        color: white; }
+      body .content .icons a:hover {
+        color: rgba(242, 89, 120, 0.75); }
     body .content .show {
       display: block !important; }
 
@@ -65,54 +70,30 @@ body {
 
 @media screen and (min-width: 960px) {
   .content img {
-    left: 25%;
-    width: 600px; }
+    width: 600px;
+    display: block;
+    margin: 0 auto; }
   .content .icons {
-    color: white; }
+    margin-top: 10px;
+    color: white;
+    word-spacing: 0.5rem;
+    font-size: 40px; }
   .content #container {
     position: absolute;
     left: 35vw;
     top: 40vh !important;
-    width: 250px;
+    width: 350px;
     padding-bottom: 10px;
     overflow: visible !important; }
-    .content #container::before, .content #container::after {
-      content: '';
-      width: 0;
-      height: 0;
-      box-sizing: inherit;
-      margin-top: 30px;
-      margin-bottom: -30px;
-      border: 3px solid transparent;
-      position: absolute; }
-    .content #container::before {
-      top: -5vh;
-      left: -1vw;
-      z-index: 100; }
-    .content #container::after {
-      bottom: 3vh;
-      left: -1vw;
-      z-index: 999; }
-    .content #container:hover::before, .content #container:hover::after {
-      width: 100%;
-      height: 100%; }
-    .content #container:hover::before {
-      border-top-color: #F25978;
-      border-right-color: #F25978;
-      transition: width 0.25s ease-out, height 0.25s ease-out 0.25s; }
-    .content #container:hover::after {
-      border-bottom-color: #F7ACA9;
-      border-left-color: #F7ACA9;
-      transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s; }
   .content #title {
-    font-size: 35px; }
+    font-size: 55px; }
   .content #sub-title {
-    font-size: 15px; }
+    font-size: 35px; }
   .content #btn {
     height: 35px;
     line-height: 35px;
-    font-size: 11px;
-    width: 100px;
+    font-size: 20px;
+    width: 180px;
     z-index: 1000;
     margin-bottom: 10px; }
     .content #btn:hover {

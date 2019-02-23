@@ -43,15 +43,21 @@ body {
             text-align: center;
             border-radius: 35px;
             position: relative;
+            background-color: rgba(242,89,120, 0.15);
         }
+        button:focus {outline:0;}
+
 
         .icons {
             display: none;
 
             a {
                 text-decoration: none !important;
-                color:white !important;
+                color:white;
+            }
 
+            a:hover {
+                color: rgba(242,89,120, 0.75);
             }
         }
 
@@ -108,75 +114,41 @@ body {
 @media screen and (min-width: 960px) {
     .content { 
         img {
-            left: 25%;
             width: 600px;
+            display: block;
+            margin: 0 auto;
         }
 
         .icons {
+            margin-top: 10px;
             color:white;
-            
+            word-spacing: 0.5rem;
+            font-size: 40px;            
         }
+        
 
         #container {
             position: absolute;
             left: 35vw;
             top: 40vh !important;
-            width: 250px;
+            width: 350px;
             padding-bottom: 10px;
             overflow: visible !important;
-            &::before,&::after{
-                content: '';
-                width: 0;
-                height: 0;
-                box-sizing: inherit;
-                margin-top: 30px;
-                margin-bottom: -30px;
-                border:3px solid transparent;
-                position: absolute;
 
-            }
-    
-            &::before{
-                top:-5vh;
-                left: -1vw;
-                z-index: 100;
-            }
-            &::after{
-                bottom: 3vh;
-                left: -1vw;
-                z-index: 999;
-            }
-    
-            &:hover::before,
-            &:hover::after{
-                width: 100%;
-                height: 100%;
-            }
-    
-            &:hover::before{
-                border-top-color: #F25978;
-                border-right-color: #F25978;
-                transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
-            }
-            &:hover::after{
-                border-bottom-color: #F7ACA9;
-                border-left-color: #F7ACA9;
-                transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
-            }
         }
 
         #title {
-            font-size: 35px;
+            font-size: 55px;
         }
 
         #sub-title {
-            font-size: 15px;
+            font-size: 35px;
         }
         #btn {
             height: 35px;
             line-height: 35px;
-            font-size: 11px;
-            width: 100px;
+            font-size: 20px;
+            width: 180px;
             z-index: 1000;
             margin-bottom: 10px;
             &:hover{
