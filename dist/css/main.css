@@ -20,6 +20,7 @@ body {
       position: relative;
       z-index: 9; }
     body .content #sub-title {
+      margin-top: -1.5rem;
       font-family: 'Shrikhand', cursive;
       margin-left: 10px; }
     body .content #btn {
