@@ -61,7 +61,6 @@ section .wave {
   bottom: 0;
   left: 0;
   background: url(../img/wave.png);
-  filter: sepia() saturate(10000%) brightness(30%) hue-rotate(330deg);
   animation: animate 10s linear infinite; }
 
 section .wave:before {
@@ -73,6 +72,7 @@ section .wave:before {
   left: 0;
   background: url(../img/wave.png);
   opacity: 0.4;
+  filter: sepia() saturate(10000%) brightness(30%) hue-rotate(330deg);
   animation: animate-reverse 10s linear infinite; }
 
 @keyframes animate {
