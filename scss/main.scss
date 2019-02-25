@@ -90,7 +90,7 @@ section .wave {
     left: 0;
     background: url(../img/wave.png);
     animation: animate 10s linear infinite;
-
+    z-index: -1;
 }
 
 section .wave:before {
