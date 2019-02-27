@@ -77,38 +77,37 @@ body {
     }
     /* Navigation styling */
   
-nav {
-    height: 40px;
-    width: 100%;
-    background-color: $alternate-color;
-    color: #eee;
-    position: fixed;
-    font-family: 'Shrikhand', cursive;
-
-}
-nav ul {
-    padding: 0;
-    margin: 0;
-}
-nav li {
-    display: inline;
-    float: left;
-}
-nav a {
-    display: inline-block;
-    width: 150px;
-    text-align: center;
-    text-decoration: none;
-    padding: 10px 0;
-    color: #eee;
-    text-decoration: none;
-}
-nav li:hover {
-    background-color: #dc648e;
-}
-nav a#openup {
-    display: none;
-}
+    nav {
+        height: 40px;
+        width: 100%;
+        background-color: $alternate-color;
+        color: #eee;
+        position: fixed;
+        font-family: 'Shrikhand', cursive;
+        ul {
+            padding: 0;
+            margin: 0;
+        }
+        li {
+            display: inline-block;
+        }
+        a {
+            display: inline-block;
+            width: 150px;
+            text-align: center;
+            text-decoration: none;
+            padding: 10px 0;
+            color: #eee;
+            text-decoration: none;
+        }
+        li:hover {
+            background-color: #dc648e;
+            height: 40px;
+        }
+        a#openup {
+            display: none;
+        }
+    } 
 }
 
 section {
@@ -167,6 +166,11 @@ section .wave:before {
 @media screen and (max-width: 960px) {
     .hide-on-small {
         display: none;
+    }
+    nav {
+        ul {
+            text-align: center;
+        }
     }
     .content { 
         img {

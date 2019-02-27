@@ -56,24 +56,24 @@ body {
     color: #eee;
     position: fixed;
     font-family: 'Shrikhand', cursive; }
-  body nav ul {
-    padding: 0;
-    margin: 0; }
-  body nav li {
-    display: inline;
-    float: left; }
-  body nav a {
-    display: inline-block;
-    width: 150px;
-    text-align: center;
-    text-decoration: none;
-    padding: 10px 0;
-    color: #eee;
-    text-decoration: none; }
-  body nav li:hover {
-    background-color: #dc648e; }
-  body nav a#openup {
-    display: none; }
+    body nav ul {
+      padding: 0;
+      margin: 0; }
+    body nav li {
+      display: inline-block; }
+    body nav a {
+      display: inline-block;
+      width: 150px;
+      text-align: center;
+      text-decoration: none;
+      padding: 10px 0;
+      color: #eee;
+      text-decoration: none; }
+    body nav li:hover {
+      background-color: #dc648e;
+      height: 40px; }
+    body nav a#openup {
+      display: none; }
 
 section {
   width: 100%;
@@ -118,6 +118,8 @@ section .wave:before {
 @media screen and (max-width: 960px) {
   .hide-on-small {
     display: none; }
+  nav ul {
+    text-align: center; }
   .content img {
     left: 20%;
     width: 60vw; }
