@@ -21,7 +21,6 @@ body {
       position: relative;
       z-index: 9; }
     body .content #sub-title {
-      margin-top: -1.5rem;
       font-family: 'Shrikhand', cursive;
       margin-left: 10px; }
     body .content #btn {
@@ -52,7 +51,7 @@ body {
   body nav {
     height: 40px;
     width: 100%;
-    background-color: #ac6590;
+    background-color: #a3486e;
     color: #eee;
     position: fixed;
     font-family: 'Shrikhand', cursive; }
@@ -130,7 +129,8 @@ section .wave:before {
     font-size: 40px;
     margin-left: 10px; }
   .content #sub-title {
-    font-size: 20px; }
+    font-size: 20px;
+    margin-top: -20px; }
   .content #btn {
     height: 35px;
     line-height: 35px;
@@ -165,7 +165,8 @@ section .wave:before {
   .content #title {
     font-size: 55px; }
   .content #sub-title {
-    font-size: 35px; }
+    font-size: 35px;
+    margin-top: -1.5rem; }
   .content #btn {
     height: 35px;
     line-height: 35px;

@@ -1,6 +1,6 @@
 
 $primary-color: #f188a7;
-$alternate-color: #ac6590;
+$alternate-color: #a3486e;
 $radient-background: radial-gradient($primary-color 20%, #8f375f);
 
 body {
@@ -33,7 +33,6 @@ body {
             z-index: 9;
         }
         #sub-title{
-            margin-top: -1.5rem;
             font-family: 'Shrikhand', cursive;
             margin-left: 10px;
         }
@@ -191,6 +190,7 @@ section .wave:before {
 
         #sub-title {
             font-size: 20px;
+            margin-top: -20px;
         }
 
         #btn {
@@ -247,6 +247,8 @@ section .wave:before {
 
         #sub-title {
             font-size: 35px;
+            margin-top: -1.5rem;
+
         }
         #btn {
             height: 35px;
