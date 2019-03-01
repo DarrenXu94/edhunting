@@ -8,7 +8,6 @@ body {
     margin: 0px;
     padding: 0px;
     height: 100vh;
-    overflow: hidden;
     .content { 
         padding-top: 10vh;
 
@@ -111,7 +110,6 @@ body {
 
 section {
     width: 100%;
-    height: 100vh;
     background-size: cover;
     background-attachment: fixed;
 }
@@ -166,6 +164,22 @@ section .wave:before {
     .hide-on-small {
         display: none;
     }
+    .show-on-small {
+        display: block;
+    }
+    section {
+        background-color: #222;
+        color: #eee;
+        padding-top: 10px;
+    }
+    .bio {
+
+        h2 {
+            text-align: center;
+        }
+        width: 80vw;
+        margin: auto;
+    }
     nav {
         ul {
             text-align: center;
@@ -179,7 +193,6 @@ section .wave:before {
 
         #container{
             margin-left: 20vw;
-            height: 200px;
         }
 
         #title {
@@ -216,6 +229,15 @@ section .wave:before {
 
   // For Desktop
 @media screen and (min-width: 960px) {
+    body {
+        overflow: hidden;
+    }
+    .show-on-small {
+        display: none;
+    }
+    section {
+        height: 100vh;
+    }
     .content { 
         img {
             width: 600px;
