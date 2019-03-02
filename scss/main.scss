@@ -82,6 +82,7 @@ body {
         color: #eee;
         position: fixed;
         font-family: 'Shrikhand', cursive;
+        z-index: 1000;
         ul {
             padding: 0;
             margin: 0;
@@ -106,6 +107,31 @@ body {
             display: none;
         }
     } 
+
+    #bio-wrapper-id {
+        margin-top: 40px;
+    }
+
+    .bio-wrapper {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #222;
+        color: #eee;
+        width: 100%;
+        z-index: 2000;
+        .bio {
+            width: 40vw;
+            margin: auto;
+            line-height: 2rem;
+            h2 {
+                font-size: 3rem;
+            }
+            p {
+                font-size: 1.5rem;
+            }
+        }
+    }
 }
 
 section {

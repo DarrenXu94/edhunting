@@ -53,7 +53,8 @@ body {
     background-color: #a3486e;
     color: #eee;
     position: fixed;
-    font-family: 'Shrikhand', cursive; }
+    font-family: 'Shrikhand', cursive;
+    z-index: 1000; }
     body nav ul {
       padding: 0;
       margin: 0; }
@@ -72,6 +73,24 @@ body {
       height: 40px; }
     body nav a#openup {
       display: none; }
+  body #bio-wrapper-id {
+    margin-top: 40px; }
+  body .bio-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #222;
+    color: #eee;
+    width: 100%;
+    z-index: 2000; }
+    body .bio-wrapper .bio {
+      width: 40vw;
+      margin: auto;
+      line-height: 2rem; }
+      body .bio-wrapper .bio h2 {
+        font-size: 3rem; }
+      body .bio-wrapper .bio p {
+        font-size: 1.5rem; }
 
 section {
   width: 100%;
