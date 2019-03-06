@@ -130,6 +130,8 @@ body {
                 right: 15vw;
                 &:hover {
                     cursor: pointer;
+                    transform: rotate(360deg);
+                    transition: all 1.5s ease-in-out 0s;
                 }
             }
             h2 {

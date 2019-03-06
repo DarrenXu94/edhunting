@@ -92,7 +92,9 @@ body {
         top: 5vh;
         right: 15vw; }
         body .bio-wrapper .bio i:hover {
-          cursor: pointer; }
+          cursor: pointer;
+          transform: rotate(360deg);
+          transition: all 1.5s ease-in-out 0s; }
       body .bio-wrapper .bio h2 {
         font-size: 3rem; }
       body .bio-wrapper .bio p {
