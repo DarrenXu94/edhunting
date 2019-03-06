@@ -110,6 +110,7 @@ body {
 
     #bio-wrapper-id {
         margin-top: 40px;
+        height: 100%;
     }
 
     .bio-wrapper {
@@ -136,10 +137,16 @@ body {
             }
             h2 {
                 font-size: 3rem;
+                border-bottom: 2px solid #fff;
+                padding-bottom: 10px;
             }
             p {
                 font-size: 1.5rem;
             }
+        }
+        .border {
+            border: 2px solid #fff !important;
+            padding: 0px 15px;
         }
     }
 }

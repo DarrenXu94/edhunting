@@ -74,7 +74,8 @@ body {
     body nav a#openup {
       display: none; }
   body #bio-wrapper-id {
-    margin-top: 40px; }
+    margin-top: 40px;
+    height: 100%; }
   body .bio-wrapper {
     position: absolute;
     top: 0;
@@ -96,9 +97,14 @@ body {
           transform: rotate(360deg);
           transition: all 1.5s ease-in-out 0s; }
       body .bio-wrapper .bio h2 {
-        font-size: 3rem; }
+        font-size: 3rem;
+        border-bottom: 2px solid #fff;
+        padding-bottom: 10px; }
       body .bio-wrapper .bio p {
         font-size: 1.5rem; }
+    body .bio-wrapper .border {
+      border: 2px solid #fff !important;
+      padding: 0px 15px; }
 
 section {
   width: 100%;
