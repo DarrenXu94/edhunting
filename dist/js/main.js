@@ -15,3 +15,21 @@ function showHome() {
   var x = document.getElementById("bio-wrapper-id");
   x.style.display = "none";
 }
+
+$('.cf a').on('click', function(event) {
+  if (this.hash !== '') {
+    event.preventDefault();
+
+    const hash = this.hash;
+
+    $('html, body').animate(
+      {
+        scrollTop: $(hash).offset().top
+      },
+      800,
+      function() {
+        window.location.hash = hash;
+      }
+    );
+  }
+});
