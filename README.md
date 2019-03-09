@@ -1,5 +1,5 @@
 # edhunting
-Promotional responsive website for a band. Craeted using node-sass and HTML5.
+Promotional responsive website for a band. Created using node-sass and HTML5.
 
 The desktop version includes css transition effects and styled contact pane.
 Mobile version includes a background scroll on click effect.
